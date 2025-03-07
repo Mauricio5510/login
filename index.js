@@ -51,7 +51,7 @@ const GOOGLE_CLIENT_SECRET = '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';
 passport.use(new GoogleStrategy({
     clientID: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:4000/auth/google/callback"
+    callbackURL: "https://login-d2tf.onrender.com:4000"
   },
   function(accessToken, refreshToken, profile, done) {
       userProfile = profile;
